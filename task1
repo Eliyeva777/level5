@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void kvadratın_sahesi_ve_perimetri(){
+  double teref;
+  if(teref<=0){
+   cout<<"Teref musbet eded olmalidir."<<endl;
+     return;
+}
+double sahe= teref*teref;
+duble perimetr= 4*teref;
+cout<<"Kvadratin terefi: "<<teref<<endl;
+cout<<"Sahe: "<<sahe<<endl;
+cout<<"Perimetr: "<<perimetr<<endl;
+}
