@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int eded;
+void ededin_bolenleri(){
+ if(eded<=0){
+  cout<<"Musbet tam eded daxil et: "<<endl;
+  return;
+}
+cout<<eded<<" ededinin bolenleri: ";
+for(int i=1; i<=eded; ++i){
+  if(eded%i==0){
+    cout<<i;
+}
+}
+cout<<endl;
+}
