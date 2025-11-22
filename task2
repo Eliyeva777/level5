@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+void cut_ve_ya_tek{
+  int eded;
+if(eded%2==0){
+  cout<<eded<<"Cut ededdir."<<endl;
+}else{
+  cout<<eded<<"Tek ededdir."<<endl;
+}
+}
