@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int eded;
+int ededin_tersi{
+ bool menfidir=(eded<0);
+ int temp_eded=menfidir?-eded:eded;
+ int ters_eded=0;
+ while(temp_eded>0){
+   int reqem=temp_eded%10;
+   ters_eded= ters_eded*10 + reqem;
+   temp_eded/=10;
+}
+return menfidir?-ters_eded:ters_eded;
+}
