@@ -1,0 +1,14 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int a;
+int b;
+void hansisi_boyukdur(){
+ if(a>b){
+cout<<a<<" ededi"<<b<<" ededinden boyukdur"<<endl;
+}else if (b>a){
+cout<<b<<" ededi"<<a<<" ededinden boyukdur"<<endl;
+}else{
+cout<<"Ikiside beraberdir"<<endl;
+}
+}
