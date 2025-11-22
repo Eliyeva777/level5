@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int eded;
+void ededin_reqemlerinin_sayi(){
+ if(eded==0){
+  cout<<eded<<" ededinin reqemlerinin sayi: 1"<<endl;
+return;
+}
+int temp_eded= eded;
+int say=0;
+while(temp_eded>0){
+ temp_eded/=10;
+ say++;
+}
+cout<<eded<<" ededinin reqemlerinin sayi: "<<say<<endl;
+}
