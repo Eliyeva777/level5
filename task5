@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int n;
+int reqemlerin_sayi(){
+  if(n==0) return 1;
+  int say=0;
+  while(n!=0){
+    n/=10;
+    say++;
+}
+return say;
+}
+bool armstrong_ededini_yoxla(int eded){
+ int org_eded=eded;
+ int n= reqemlerin_sayi(eded);
+ long long cem=0;
+ int temp=eded;
+ while(temp>0){
+  int reqem=temp%10;
+  cem+=round(pow(reqem, n));
+  temp/=10;
+}
+cout<<eded<<" ucun reqemlerin quvvetlerinin cemi: "<<cem<<endl;
+return org_eded==cem;
+}
+
