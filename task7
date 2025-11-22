@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int eded;
+void sade_ededdirmi(){
+ cout<<eded<<" ededi yoxlanilir"<<endl;
+ if(eded<=1){
+  cout<<eded<<" sade eded deyil"<<endl;
+  return;
+}
+ if(eded==2){
+  cout<<eded<<" sade ededdir"<<endl;
+  return;
+}
+ if(eded%2==0){
+  cout<<eded<<" sade eded deyil"<<endl;
+ return;
+}
+int limit=sqrt(eded);
+for(int i=3; i<=limit; i+=2){
+ if(eded%i==0){
+  cout<<eded<<" sade eded deyil("<<i<<" ededine bolunur)"<<endl;
+  return;
+}
+}
+cout<<eded<<" sade ededdir"<<endl;
+}
