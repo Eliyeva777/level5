@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int n;
+long long faktorial(){
+ if(n<0){
+  cout<<"Yanlisdir"<<endl;
+  return -1;
+}
+if(n==0) return 1;
+long long netice=1;
+for(int i=1; i<=n; ++i){
+  netice*=i;
+}
+return netice;
+}
